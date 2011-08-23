@@ -1,0 +1,24 @@
+5.13 18 Aug 2011
+================
+
+The mssqlnative driver has been substantially improved, and although is still beta, is much more stable.
+
+
+Change Log
+==========
+
+ - GetInsertSQL/GetUpdateSQL: Now $ADODB_QUOTE_FIELDNAMES allows you to define 'NATIVE', 'UPPER', 'LOWER'. If set to true, will default to 'UPPER'.
+
+
+- mysqli: added support for persistent connections 'p:'.
+
+
+- mssqlnative: ADODB_FETCH_BOTH did not work properly. Fixed.
+
+
+- mssqlnative: return values for stored procedures where not returned! Fixed. See http://phplens.com/lens/lensforum/msgs.php?id=18919
+
+
+- mssqlnative: timestamp and fetchfield bugs fixed. http ://phplens.com/lens/lensforum/msgs.php?id=18453
+
+- postgres: decode bug fixed.
